@@ -1,0 +1,19 @@
+**/.sass-cache
+**/maps/
+**/.vscode/
+**/*.map
+**/.git/
+**/*.log
+**/log/
+**/note.txt
+**/package-lock.json
+**/README.md
+**/cache
+
+# Dependency directories
+**/node_modules/
+
+# Folder uploads
+**/wp-content/uploads/
+
+**/pattern-lab/

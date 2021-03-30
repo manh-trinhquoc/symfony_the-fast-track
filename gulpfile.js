@@ -27,7 +27,7 @@ gulp.task('sass', function () {
 // Watch Files For Changes
 gulp.task('browser-sync', function () {
     browserSync.init({
-        proxy: "http://localhost/website_sunshinegroup/",
+        proxy: "http://localhost/symfony_the_fast_track/",
         // port: 3002,
     });
     gulp.watch("sunshine/**/*.scss").on('change', browserSync.reload);

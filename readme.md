@@ -98,3 +98,7 @@ So the walk aroud is to connect to docker-compose ```docker-compose exec databas
 
 2. Going furthur
 - [postgresql doc](https://www.postgresql.org/docs/current/index.html)
+
+## Step 9: Setting up Admin Backend
+### 1. Note
+- The evironment variable you get from command ```symfony var:export ``` is retrived from docker service because symfony is intergrated with docker. These variable only visible if you run symfony local web server ```symfony serve -d```. If you use xampp, wampp or other server you can only see environment variable in file .env and cause faltal error when connect to docker postgres server. 

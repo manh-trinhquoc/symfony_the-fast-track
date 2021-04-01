@@ -80,8 +80,11 @@ symfony run psql
 symfony run pg_dump --data-only > dump.sql
 ```
 - To install the required binary, You have to install PostgreSQL in windows. Then add bin folder to %PATH%
+
 [create account and down load for free](https://www.enterprisedb.com/downloads/postgresql)
+
 [some tut for ref](http://www.7codes.info/post/13/install-postgresql-in-xampp-on-windows-and-integrate-phppgadmin-tool)
+
 - If you run psql command via docker-compose using the following command. You will get error: "role root does not exist"
 ```
 docker-compose exec database psql main
@@ -92,3 +95,6 @@ symfony run pg_dump --data-only > dump.sql  # If this command work, it means you
 symfony var:export # This command shall dump the info used to connect to database
 ```
 So the walk aroud is to connect to docker-compose ```docker-compose exec database sh``` . Then create user main ```adduser main ```. Switch to user main ```su main```. Test that you can use psql commant ``` psql main ```
+
+2. Going furthur
+- [postgresql doc](https://www.postgresql.org/docs/current/index.html)

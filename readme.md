@@ -102,3 +102,11 @@ So the walk aroud is to connect to docker-compose ```docker-compose exec databas
 ## Step 9: Setting up Admin Backend
 ### 1. Note
 - The evironment variable you get from command ```symfony var:export ``` is retrived from docker service because symfony is intergrated with docker. These variable only visible if you run symfony local web server ```symfony serve -d```. If you use xampp, wampp or other server you can only see environment variable in file .env and cause faltal error when connect to docker postgres server. 
+
+## Step 12: Listening to Events
+### 1. Note
+- You can excute command to find out which listeners are registered for an event and their priorities. Example
+```
+php bin/console debug:event-dispatcher kernel.request
+```
+- [Symfony built-in events](https://symfony.com/doc/current/reference/events.html)

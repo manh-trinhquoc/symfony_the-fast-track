@@ -110,3 +110,9 @@ So the walk aroud is to connect to docker-compose ```docker-compose exec databas
 php bin/console debug:event-dispatcher kernel.request
 ```
 - [Symfony built-in events](https://symfony.com/doc/current/reference/events.html)
+
+## Step 13: Managing the lifecycle of Doctrine object
+
+### 1. Going futhur
+- [symfony service cheat sheet](https://github.com/andreia/symfony-cheat-sheets/blob/master/Symfony4/services_en_42.pdf)
+- [symfony doc for Service Container](https://symfony.com/doc/current/service_container.html)

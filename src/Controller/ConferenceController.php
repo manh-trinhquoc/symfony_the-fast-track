@@ -61,7 +61,7 @@ EOF
     }
 
     /**
-     * @Route("/conference/{id}", name="conference")
+     * @Route("/conference/{slug}", name="conference")
      */
     public function show(Request $request, Conference $conference, CommentRepository $commentRepository): Response
     {

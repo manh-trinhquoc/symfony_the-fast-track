@@ -123,3 +123,4 @@ php bin/console debug:event-dispatcher kernel.request
 - [symfony doc for form customization](https://symfony.com/doc/current/form/form_customization.html)
 - [symfony ref list of form type](https://symfony.com/doc/current/reference/forms/types.html)
 - [symfony doc for form themes](https://symfony.com/doc/current/form/form_themes.html)
+- [form cheat sheet](https://github.com/andreia/symfony-cheat-sheets/blob/master/Symfony2/how_symfony2_forms_works_en.pdf)

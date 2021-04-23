@@ -8,6 +8,7 @@
 **/note.txt
 **/package-lock.json
 **/cache
+**/public/uploads/
 
 # Dependency directories
 **/node_modules/

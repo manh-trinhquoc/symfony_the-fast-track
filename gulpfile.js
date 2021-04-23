@@ -8,35 +8,37 @@ var autoprefixer = require('gulp-autoprefixer'); // auto prefix
 var browserSync = require('browser-sync').create();
 
 // input and output
-var input = 'sunshine/assets/sass/**/*.scss';
-var output = 'sunshine/assets/css';
+// var input = 'sunshine/assets/sass/**/*.scss';
+// var output = 'sunshine/assets/css';
 
 //task
 //compile
-gulp.task('sass', function () {
-    return gulp.src(input)
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'expanded'
-        }))
-        //.pipe(autoprefixer())
-        .pipe(sourcemaps.write("../maps/css"))
-        .pipe(gulp.dest(output))
-    // .pipe(livereload());
-});
+// gulp.task('sass', function () {
+//     return gulp.src(input)
+//         .pipe(sourcemaps.init())
+//         .pipe(sass({
+//             outputStyle: 'expanded'
+//         }))
+//         //.pipe(autoprefixer())
+//         .pipe(sourcemaps.write("../maps/css"))
+//         .pipe(gulp.dest(output))
+//     // .pipe(livereload());
+// });
 // Watch Files For Changes
 gulp.task('browser-sync', function () {
     browserSync.init({
-        proxy: "http://localhost/symfony_the_fast_track/",
+        proxy: "http://symfony-the-fast-track:8080/",
         // port: 3002,
     });
-    gulp.watch("sunshine/**/*.scss").on('change', browserSync.reload);
-    gulp.watch("sunshine/**/*.php").on('change', browserSync.reload);
-    gulp.watch("sunshine/**/*.js").on('change', browserSync.reload);
+    gulp.watch("**/*.scss").on('change', browserSync.reload);
+    gulp.watch("**/*.php").on('change', browserSync.reload);
+    gulp.watch("**/*.js").on('change', browserSync.reload);
+    gulp.watch("**/*.twig").on('change', browserSync.reload);
+    gulp.watch("**/*.yml").on('change', browserSync.reload);
     livereload.listen();
-    gulp.watch([input], gulp.series('sass'));
+    //gulp.watch([input], gulp.series('sass'));
 
 });
 
 // Default Task
-gulp.task('default', gulp.series('sass', 'browser-sync'))
+gulp.task('default', gulp.series('browser-sync'))

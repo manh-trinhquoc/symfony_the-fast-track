@@ -116,3 +116,10 @@ php bin/console debug:event-dispatcher kernel.request
 ### 1. Going futhur
 - [symfony service cheat sheet](https://github.com/andreia/symfony-cheat-sheets/blob/master/Symfony4/services_en_42.pdf)
 - [symfony doc for Service Container](https://symfony.com/doc/current/service_container.html)
+
+## Step 14: Accepting Feedback with Forms
+
+### 1. Going futhur
+- [symfony doc for form customization](https://symfony.com/doc/current/form/form_customization.html)
+- [symfony ref list of form type](https://symfony.com/doc/current/reference/forms/types.html)
+- [symfony doc for form themes](https://symfony.com/doc/current/form/form_themes.html)

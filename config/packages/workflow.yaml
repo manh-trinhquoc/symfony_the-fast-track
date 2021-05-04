@@ -21,3 +21,9 @@ framework:
                 accept:
                     from: submitted
                     to: ham
+                might_be_spam:
+                    from: submitted
+                    to: potential_spam
+                reject_spam:
+                    from: submitted
+                    to: spam
